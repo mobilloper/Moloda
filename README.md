@@ -1,10 +1,5 @@
-KolodaView ![cocoapods](https://img.shields.io/cocoapods/v/Koloda.svg)[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage) ![Swift 4.2](https://img.shields.io/badge/Swift-4.2-orange.svg)
+MolodaView ![cocoapods](https://img.shields.io/cocoapods/v/Koloda.svg)[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage) ![Swift 4.2](https://img.shields.io/badge/Swift-4.2-orange.svg)
 --------------
-
-[![Yalantis](https://raw.githubusercontent.com/Yalantis/PullToMakeSoup/master/PullToMakeSoupDemo/Resouces/badge_dark.png)](https://Yalantis.com/?utm_source=github)
-
-Check this [article on our blog](https://yalantis.com/blog/how-we-built-tinder-like-koloda-in-swift/).
-And another one [article on our blog](https://yalantis.com/blog/koloda-tinder-like-animation-version-2-prototyping-in-pixate-and-development-in-swift/)
 
 ![Preview](https://github.com/Yalantis/Koloda/blob/master/Koloda_v2_example_animation.gif)
 ![Preview](https://github.com/Yalantis/Koloda/blob/master/Koloda_v1_example_animation.gif)
@@ -12,7 +7,7 @@ And another one [article on our blog](https://yalantis.com/blog/koloda-tinder-li
 Purpose
 --------------
 
-KolodaView is a class designed to simplify the implementation of Tinder like cards on iOS. It adds convenient functionality such as a UITableView-style dataSource/delegate interface for loading views dynamically, and efficient view loading, unloading .
+MolodaView is a class designed to simplify the implementation of Tinder like cards on iOS. It adds convenient functionality such as a UITableView-style dataSource/delegate interface for loading views dynamically, and efficient view loading, unloading .
 
 Supported OS & SDK Versions
 -----------------------------
@@ -22,12 +17,12 @@ Supported OS & SDK Versions
 ARC Compatibility
 ------------------
 
-KolodaView requires ARC.
+MolodaView requires ARC.
 
 Thread Safety
 --------------
 
-KolodaView is subclassed from UIView and - as with all UIKit components - it should only be accessed from the main thread. You may wish to use threads for loading or updating KolodaView contents or items, but always ensure that once your content has loaded, you switch back to the main thread before updating the KolodaView.
+MolodaView is subclassed from UIView and - as with all UIKit components - it should only be accessed from the main thread. You may wish to use threads for loading or updating MolodaView contents or items, but always ensure that once your content has loaded, you switch back to the main thread before updating the MolodaView.
 
 Installation
 --------------
@@ -37,12 +32,7 @@ use_frameworks!
 pod "Koloda"
 ```
 
-To install via Carthage add this lines to your Cartfile
-```ruby
-github "Yalantis/Koloda"
-```
-
-To install manually the KolodaView class in an app, just drag the KolodaView, DraggableCardView, OverlayView class files (demo files and assets are not needed) into your project. Also you need to install facebook-pop. Or add bridging header if you are using CocoaPods.
+To install manually the MolodaView class in an app, just drag the KolodaView, DraggableCardView, OverlayView class files (demo files and assets are not needed) into your project. Also you need to install facebook-pop. Or add bridging header if you are using CocoaPods.
 
 Usage
 --------------
@@ -240,21 +230,21 @@ not move.
 Release Notes
 ----------------
 Version 4.7
-- fixed a bug with card responding during swiping via [@lixiang1994](https://github.com/lixiang1994)
-- fixed a bug with inappropriate layouting via [@soundsmitten](https://github.com/soundsmitten)
+- fixed a bug with card responding during swiping
+- fixed a bug with inappropriate layouting
 
 Version 4.6
-- update some properties to be publicitly settable via [@sroik](https://github.com/sroik) and [@leonardoherbert](https://github.com/leonardoherbert)
-- Xcode 9 back compatibility via [@seriyvolk83](https://github.com/seriyvolk83)
-- added posibility to have the card stack at the top or bottom via [@lorenzOliveto](https://github.com/lorenzOliveto)
+- update some properties to be publicitly settable
+- Xcode 9 back compatibility
+- added posibility to have the card stack at the top or bottom
 
 Version 4.5
-- Swift 4.2 via [@evilmint](https://github.com/evilmint)
+- Swift 4.2
 
 Version 4.4
-- Swift 4.1 via [@irace](https://github.com/irace)
-- Added `isLoop` property via [@brownsoo](https://github.com/brownsoo)
-- Take into account card's alpha channel via [@bwhtmn](https://github.com/bwhtmn)
+- Swift 4.1
+- Added `isLoop` property
+- Take into account card's alpha channel
 
 Version 4.3
 - Swift 4 support
@@ -274,7 +264,7 @@ Version 3.0
 
 - Ability to dynamically insert/delete/reload specific cards
 - External animator
-- Major refactoring. [More information](https://github.com/Yalantis/Koloda/releases/tag/3.0.0)
+- Major refactoring.
 - Swift 2.2 support
 
 Version 2.0
@@ -290,18 +280,15 @@ Version 1.0
 
 - Release version.
 
-#### Apps using KolodaView
+#### Apps using MolodaView
 
 - [BroApp](https://itunes.apple.com/ua/app/bro-social-networking-bromance/id1049979758?mt=8).
-
-![Preview](https://github.com/Yalantis/Koloda/blob/master/Example/UsageExamples/bro.gif)
 - [Storage Space Plus](https://itunes.apple.com/us/app/storage-space-plus-compress/id1086277462?mt=8).
-- [Color Dating](https://itunes.apple.com/us/app/color-dating-free-app-for/id1100827439?mt=8).
 - [Ao Dispor](https://itunes.apple.com/pt/app/ao-dispor/id1185556583)
 
 #### Let us know!
 
-We’d be really happy if you sent us links to your projects where you use our component. Just send an email to github@yalantis.com And do let us know if you have any questions or suggestion regarding the animation.
+We’d be really happy if you sent us links to your projects where you use our component.
 
 P.S. We’re going to publish more awesomeness wrapped in code and a tutorial on how to make UI for iOS (Android) better than better. Stay tuned!
 
@@ -310,15 +297,4 @@ License
 
 The MIT License (MIT)
 
-Copyright © 2019 Yalantis
-
-Permission is hereby granted free of charge to any person obtaining a copy of this software and associated documentation files (the "Software") to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE.
+Copyright © 2019 Mobilloper
